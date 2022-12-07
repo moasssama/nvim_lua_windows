@@ -95,4 +95,5 @@ use {'w0rp/ale',
   cmd = 'ALEEnableBuffer',
   config = 'vim.cmd [[ALEEnableBuffer]]'
 }
+use "tpope/vim-fugitive"
 end)
