@@ -1,0 +1,94 @@
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-default branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+"Plug '~/my-prototype-plugin'
+
+
+Plug 'blueshirts/darcula'
+Plug 'neoclide/coc.nvim'
+Plug 'sheerun/vim-polyglot'
+"Plug 'neoclide/coc-eslint'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+
+Plug 'rakr/vim-one'
+"Plug 'yamatsum/nvim-nonicons'
+" requires
+"Plug 'kyazdani42/nvim-web-devicons' " for file icons
+"Plug 'kyazdani42/nvim-tree.lua'
+ Plug 'ryanoasis/vim-devicons'
+"Plug 'wycats/nerdtree'
+Plug 'scrooloose/nerdtree'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'feline-nvim/feline.nvim'
+Plug 'feline-nvim/feline.nvim'
+
+
+
+
+"--if use nvim-web-devicons
+"use {
+"'yamatsum/nvim-nonicons',
+"  requires = {'kyazdani42/nvim-web-devicons'}
+"}
+
+
+" Initialize plugin system
+call plug#end()
+
+
+require('feline').setup()
+filetype off
+let g:webdevicons_enable_nerdtree = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+
+set encoding=UTF-8
+set mouse=a 
+colorscheme one
+syntax on
+set tabstop=3
+nmap <C-n> : NERDTreeToggle <CR>  
+set scrolloff=999
+set wrap
+set autochdir
+"set guifont=Monofur_NF:h20 
+set guifont=JetBrainsMono_NF:h16 
+set nu  
+set relativenumber
+

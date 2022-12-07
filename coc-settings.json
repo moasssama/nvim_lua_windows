@@ -1,0 +1,16 @@
+{
+  "coc.source.emoji.filetypes":["html", "md", "wiki", "js"],
+  "codeLens.enable": false,
+  "diagnostic.errorSign": "💀",
+  "diagnostic.warningSign": "⚠️",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
+
+  "suggest.timeout": 5000,
+  "suggest.floatEnable": false,
+   "suggest.autoTrigger": "none",
+   "diagnostic.enableMessage":  "jump"
+ }
+
+
+
