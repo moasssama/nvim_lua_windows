@@ -96,4 +96,10 @@ use {'w0rp/ale',
   config = 'vim.cmd [[ALEEnableBuffer]]'
 }
 use "tpope/vim-fugitive"
+use  'hrsh7th/cmp-emoji'
+require'cmp'.setup {
+  sources = {
+    { name = 'emoji' }
+  }
+}
 end)

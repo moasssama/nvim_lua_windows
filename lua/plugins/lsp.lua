@@ -33,6 +33,8 @@ cmp.setup({
     { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'path' },
+    { name = 'emoji'}
+  
 --    { name = 'nvim_lua' },
 --    { name = 'from_vscode'},
 --    { name = 'emmet_ls'},
